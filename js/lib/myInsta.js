@@ -1,3 +1,19 @@
+    var feedbase = new Instafeed({
+        userId: '2112923378',
+        accessToken:'2112923378.1677ed0.0c1a405a47cc12dda94f41a996a6d31a',
+        
+        get: 'user',
+        tagName: 'lvdesignfr lv2018',
+        sortBy: 'most-recent',
+        limit: 1,
+        resolution: 'low_resolution',
+        orientation:'portrait',
+        filter: function(image) {
+    return image.tags.indexOf('lv2018') >= 0;
+},
+        template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+    });
+    feedbase.run();
 /*
 var feed = new Instafeed({
         get: 'tagged',
@@ -28,19 +44,3 @@ Clé secrète de l’app Instagram
 0c1a405a47cc12dda94f41a996a6d31a
 0c1a405a47cc12dda94f41a996a6d31a
 */
-    var feedbase = new Instafeed({
-        userId: '2112923378',
-        accessToken:'2112923378.1677ed0.0c1a405a47cc12dda94f41a996a6d31a',
-        
-        get: 'user',
-        tagName: 'lvdesignfr lv2018',
-        sortBy: 'most-recent',
-        limit:'1',
-        resolution: 'low_resolution',
-        orientation:'portrait',
-        filter: function(image) {
-    return image.tags.indexOf('lv2018') >= 0;
-},
-        template: '<a href="{{link}}"><img src="{{image}}" /></a>'
-    });
-    feedbase.run();
