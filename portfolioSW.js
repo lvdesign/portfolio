@@ -13,8 +13,7 @@
         return caches.open(version + staticCacheName)
             .then(function (cache) {
                 return cache.addAll([
-                    '/portfolio/js/vendor/jquery-1.11.2.min.js',
-                    '/portfolio/js/lib/instafeed.min.js',
+                   
                     '/portfolio/js/lib/myInsta.js',
                     '/portfolio/js/lib/cbpHorizontalSlideOutMenu.js',
                     '/portfolio/js/main.js',

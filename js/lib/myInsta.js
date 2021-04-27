@@ -11,7 +11,7 @@
         filter: function(image) {
     return image.tags.indexOf('lv2018') >= 0;
 },
-        template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+        template: '<a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a>'
     });
     feedbase.run();
 /*
