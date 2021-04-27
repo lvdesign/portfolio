@@ -1,18 +1,18 @@
 title: "Laurent Vignaux Portfolio"
 email: "mailbox@lvdesign.com.fr"
 description: "Mon Portfolio."
-baseurl: "/portfolio"
-url: "https://lvdesign.github.io" 
+baseurl: /portfolio
+url: https://lvdesign.github.io
 
 twitter_username: lvdesign
 github_username: lvdesign
 instagram_username: lvdesignfr
 
 collections:
-    print:
-      output: true    
-    web:
-      output: true
+  print:
+    output: true
+  web:
+    output: true
 
 # Build settings
 markdown: kramdown
