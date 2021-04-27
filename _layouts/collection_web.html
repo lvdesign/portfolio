@@ -1,0 +1,24 @@
+{% include header.html %}
+<div class="">
+
+    <div class="grid-images">
+    {% for webed in site.web %}
+      {% if ob.title %}
+      
+      
+      <figure class="image-item">
+      <a href="{{ site.baseurl }}{{ webed.url }}">
+      <img src="{{ site.baseurl }}{{webed.img}}" alt="{{ webed.title }}" class="thumb"/>
+      <figcaption class="legImg">
+      <span >{{ webed.title }}</span>
+      <span class="smaller">{{ webed.tag }}</span></a>
+      </figcaption></figure>
+
+      
+      {% endif %}
+    {% endfor %}
+
+    </div>
+
+</div>
+{% include footer.html %}

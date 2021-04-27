@@ -1,0 +1,136 @@
+<!doctype html>
+<html class="no-js" lang="fr" xmlns:og="http://ogp.me/ns#">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123051981-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-123051981-1');
+	</script>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<meta name="description"
+		content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+	<link rel="manifest" href="{{ 'site.webmanifest' | prepend: site.url | prepend: site.url }} ">
+
+	<link rel="apple-touch-icon" href="{{'/apple-touch-icon.png' | prepend: site.baseurl | prepend: site.url  }}">
+	<link rel="icon" type="image/png" href="{{ '/favicon.png'| prepend: site.baseurl | prepend: site.url }}" />
+	<!-- Place favicon.ico in the root directory -->
+
+	<link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
+
+	<script src="{{ '/js/vendor/modernizr-2.8.3.min.js' | prepend: site.baseurl }}"></script>
+
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
+		href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
+
+	<meta name=”twitter:card” content=”summary” />
+	<meta name=”twitter:site” content=”@lvdesign” />
+	<meta name=”twitter:creator” content=”@lvdesign”>
+	<meta name=”twitter:title” content=”Portfolio Laurent Vignaux de LVdesign” />
+	<meta name=”twitter:description” content=”Le Portfolio de Laurent Vignaux, Directeur de création et developpeur du
+		Studio LVdesign” />
+	<meta name=”twitter:image” content=”https://lvdesign.github.io/portfolio/apple-touch-icon-72x72-precomposed.png” />
+
+	<meta property="og:title" content="Portfolio Laurent Vignaux de LVdesign" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description"
+		content="Le Portfolio de Laurent Vignaux, Directeur de création et developpeur du Studio LVdesign" />
+	<meta property="og:url" content="https://lvdesign.github.io/portfolio/" />
+	<meta property="og:image" content="https://lvdesign.github.io/portfolio/apple-touch-icon-72x72-precomposed.png" />
+
+	<meta content="Le Portfolio de Laurent Vignaux, Directeur de création et developpeur du Studio LVdesign"
+		name="description" />
+	<link rel="me" href="https://github.com/lvdesign/" />
+	<link rel="me" href="https://lvdesign.com.fr" />
+
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+	<header>
+
+		<div id="container-nav">
+
+			<section id="nav" class="wrapper">
+
+				<!-- Checkbox Hack markup -->
+				<input type="checkbox" id="toggle" />
+
+				<label for="toggle" onclick>Menu</label>
+				<!-- /Checkbox Hack markup -->
+				<nav class="cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
+					<div class="cbp-hsinner">
+						<!--menu-->
+						<ul class="cbp-hsmenu" role="navigation">
+
+
+
+							<li><a href="{{ site.baseurl }}/">home</a></li>
+
+							<li><a href="#">Print</a>
+								<ul class="cbp-hssubmenu cbp-hssub-rows">
+									<h3>Une sélection de travaux Print.</h3>
+									{% for printed in site.print %}
+									{% if printed.title %}
+									<li><a href="{{ site.baseurl }}{{ printed.url }}">
+											<img src="{{ site.baseurl }}{{printed.img}}" alt="{{ printed.title }}" />
+											<span>{{ printed.title }}</span><span class="role-tag">{{ printed.tag
+												}}</span>
+										</a>
+									</li>
+									{% endif %}
+									{% endfor %}
+
+								</ul>
+							</li>
+
+							<li><a href="/">Web</a>
+								<ul class="cbp-hssubmenu cbp-hssub-rows">
+									<h3>Une sélection de travaux pour le Web.</a></h3>
+									{% for webed in site.web %}
+									{% if webed.title %}
+									<li><a href="{{ site.baseurl }}{{ webed.url }}">
+											<img src="{{ site.baseurl }}{{ webed.img }}" alt="{{ webed.title }}" />
+											<span>{{ webed.title }}</span><span class="role-tag">{{ webed.tag }}</span>
+										</a>
+									</li>
+									{% endif %}
+									{% endfor %}
+
+								</ul>
+							</li>
+							<li><a href="{{ site.baseurl }}/about/">About</a></li>
+						</ul>
+					</div>
+				</nav>
+
+			</section>
+			<!--endContnav-->
+
+		</div>
+		<!--endContnav-->
+
+		<div class="banner">
+			<h1 class="brand">
+				<span class="brand-portfolio">Portfolio</span>
+				Laurent Vignaux
+				<a href="{{ site.baseurl }}/about/">
+					<span class="brand-role">Graphiste, Directeur artistique, Front-End Developer</span>
+				</a>
+			</h1>
+		</div>
+	</header>

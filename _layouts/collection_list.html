@@ -1,0 +1,23 @@
+{% include header.html %}
+<div class="page clearfix">
+
+    <div class="doc-grid collection-list-page ">
+    {% for printed in site.print %}
+      {% if ob.title %}
+      
+      
+      <figure class="doc-cell">
+      <a href="{{ site.baseurl }}{{ printed.url }}">
+      <img src="{{ site.baseurl }}{{printed.img}}" alt="{{ printed.title }}" class="thumb"/>
+      <figcaption class="legImg">
+      <span >{{ printed.title }}</span>
+      <span class="smaller">{{ printed.tag }}</span></a>
+      </figcaption></figure>
+      
+      {% endif %}
+    {% endfor %}
+
+    </div>
+
+</div>
+{% include footer.html %}

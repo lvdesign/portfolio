@@ -1,0 +1,40 @@
+{% include header.html %}
+
+    <div class="content txt-page-web-print">
+
+        <figure><img src="{{ site.baseurl }}{{ page.img }}" alt="{{ page.title }} " /></figure>
+
+                <div class="">{{ content }}</div> 
+                
+             
+   
+                <ul class="grid-images">
+                        {% for image in page.images %}
+                        <li class="image-item"><img src="{{ site.baseurl }}{{ image.image_path }}" alt="{{ page.title}}"/></li>
+                        {% endfor %}
+                </ul>
+                
+                <ul class="grid-images">
+                        {% for image in page.imagespages %}
+                        <li class="image-item"><img src="{{ site.baseurl }}{{image.image_path }}" alt="{{ page.title}}"/></li>
+                        {% endfor %}
+                </ul>
+
+                <ul class="grid-images">
+                        {% for image in page.imagespages1 %}
+                        <li class="image-item"><img src="{{ site.baseurl }}{{image.image_path }}" alt="{{ page.title}}"/></li>
+                        {% endfor %}
+                </ul>
+
+                <ul class="grid-images">
+                        {% for image in page.imagespages2 %}
+                        <li class="image-item"><img src="{{ site.baseurl }}{{image.image_path }}" alt="{{ page.title}}"/></li>
+                        {% endfor %}
+                </ul>
+
+                        {% for image in page.images-simple %}
+                                <img class="simple-image" src="{{ site.baseurl }}{{image.image_path }}" alt="{{ page.title}}"/>
+                        {% endfor %}
+        
+    </div>
+{% include footer.html %}

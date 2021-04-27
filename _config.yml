@@ -1,0 +1,33 @@
+title: "Laurent Vignaux Portfolio"
+email: "mailbox@lvdesign.com.fr"
+description: "Mon Portfolio."
+baseurl: "/portfolio"
+url: "https://lvdesign.github.io" 
+
+twitter_username: lvdesign
+github_username: lvdesign
+instagram_username: lvdesignfr
+
+collections:
+    print:
+      output: true    
+    web:
+      output: true
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

@@ -1,0 +1,55 @@
+<footer role="contentinfo">
+
+  <h3>{{ site.title }}</h3>
+
+  <ul class="social-link">
+
+    <li><a href="https://fr-fr.facebook.com" title=" facebook">
+        <img src="{{site.baseurl}}/img/picto/sociaux/facebook_black_24-03.png" alt="facebook" title=" facebook">
+        <span class="hide"> facebook</span></a>
+    </li>
+    <li><a href="https://www.pinterest.com/" title=" pinterest">
+        <img src="{{site.baseurl}}/img/picto/sociaux/pinterest_black_24-03.png" alt="pinterest" title=" pinterest">
+        <span class="hide"> Pinterest</span></a>
+    </li>
+    <li><a href="https://www.instagram.com/" title="instagram">
+        <img src="{{site.baseurl}}/img/picto/sociaux/instagram_black_24-03.png" alt="instagram" title="instagram">
+        <span class="hide">Instagram</span></a>
+    </li>
+    <li><a href="https://www.linkedin.com/in/laurentvignaux/" title="linkedin laurentvignaux">
+        <img src="{{site.baseurl}}/img/picto/sociaux/linkedin_black_24-03.png" alt="linkedin" title="linkedin">
+        <span class="hide"> Linkedin</span></a>
+    </li>
+    {% if site.twitter_username %}
+    <li><a href="https://twitter.com/{{ site.twitter_username }}" title="linkedin laurentvignaux">
+        <img src="{{site.baseurl}}/img/picto/sociaux/twitter_black_24-03.png" alt="twitter" title="twitter">
+        <span class="hide"> Twitter</span></a>
+    </li>
+    {% endif %}
+
+
+  </ul>
+
+
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script type="text/javascript" src='{{ "/js/main.js" | prepend: site.baseurl }}'></script>
+
+<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+
+<script type="text/javascript" src='{{ "/js/lib/myInsta.js" | prepend: site.baseurl }}'></script>
+
+<script src='{{ "/js/lib/cbpHorizontalSlideOutMenu.js" | prepend: site.baseurl }}'></script>
+
+<script>
+  var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
+</script>
+
+
+
+</body>
+
+</html>

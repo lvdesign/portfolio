@@ -1,0 +1,41 @@
+{
+    "name": "Portfolio - laurent vignaux",  
+    "short_name": "Portfolio",  
+    "icons": [
+        {
+            "src": "/apple-touch-icon-57x57-precompose.png",
+            "sizes": "57x57",
+            "type": "image/png"
+        },
+            {
+            "src": "/apple-touch-icon-72x72-precomposed.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/apple-touch-icon-precomposed.png",
+            "sizes": "57x57",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icon/lvdesign-500.png",
+            "sizes": "500x500",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icon/lvdesign-600.png",
+            "sizes": "600x600",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ],
+        "start_url": "/",
+        "display": "minimal-ui",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff"
+ }
+    
