@@ -1,0 +1,17 @@
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/portfolio/vendor/bundle/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/opt/homebrew/opt/ruby/bin/ruby -I /opt/homebrew/lib/ruby/site_ruby/3.0.0 extconf.rb
+creating Makefile
+
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/portfolio/vendor/bundle/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20220929-14911-zp39bm sitelibdir\=./.gem.20220929-14911-zp39bm clean
+
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/portfolio/vendor/bundle/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20220929-14911-zp39bm sitelibdir\=./.gem.20220929-14911-zp39bm
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/portfolio/vendor/bundle/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20220929-14911-zp39bm sitelibdir\=./.gem.20220929-14911-zp39bm install
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20220929-14911-zp39bm

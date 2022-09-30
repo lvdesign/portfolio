@@ -1,0 +1,17 @@
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/portfolio/vendor/bundle/gems/eventmachine-1.2.7/ext/fastfilereader
+/opt/homebrew/opt/ruby/bin/ruby -I /opt/homebrew/lib/ruby/site_ruby/3.0.0 extconf.rb
+creating Makefile
+
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/portfolio/vendor/bundle/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20220929-14911-rehf70 sitelibdir\=./.gem.20220929-14911-rehf70 clean
+
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/portfolio/vendor/bundle/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20220929-14911-rehf70 sitelibdir\=./.gem.20220929-14911-rehf70
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/portfolio/vendor/bundle/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20220929-14911-rehf70 sitelibdir\=./.gem.20220929-14911-rehf70 install
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20220929-14911-rehf70

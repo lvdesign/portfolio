@@ -1,0 +1,17 @@
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/portfolio/vendor/bundle/gems/unf_ext-0.0.7.7/ext/unf_ext
+/opt/homebrew/opt/ruby/bin/ruby -I /opt/homebrew/lib/ruby/site_ruby/3.0.0 extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/portfolio/vendor/bundle/gems/unf_ext-0.0.7.7/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20220929-14911-l9x2ti sitelibdir\=./.gem.20220929-14911-l9x2ti clean
+
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/portfolio/vendor/bundle/gems/unf_ext-0.0.7.7/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20220929-14911-l9x2ti sitelibdir\=./.gem.20220929-14911-l9x2ti
+compiling unf.cc
+linking shared-object unf_ext.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/portfolio/vendor/bundle/gems/unf_ext-0.0.7.7/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20220929-14911-l9x2ti sitelibdir\=./.gem.20220929-14911-l9x2ti install
+/usr/bin/install -c -m 0755 unf_ext.bundle ./.gem.20220929-14911-l9x2ti

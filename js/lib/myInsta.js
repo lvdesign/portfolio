@@ -1,6 +1,6 @@
     var feedbase = new Instafeed({
         userId: '2112923378',
-        accessToken:'2112923378.1677ed0.0c1a405a47cc12dda94f41a996a6d31a',
+        accessToken:'2112923378.1677ed0.c80c9f9618354474f2502923a0f066e0',
         
         get: 'user',
         tagName: 'lvdesignfr lv2018',
@@ -15,6 +15,19 @@
     });
     feedbase.run();
 /*
+0c1a405a47cc12dda94f41a996a6d31a
+c80c9f9618354474f2502923a0f066e0
+793549911520671
+0ccf10dde344e56d352a32f86498d2fb
+
+Identifiant de l’application
+1385447295187833
+
+Clé secrète
+a5656166e14333b09b9ea3fed3339a49
+
+
+
 var feed = new Instafeed({
         get: 'tagged',
         tagName: 'awesome',
@@ -43,4 +56,6 @@ ID : 208868106607746
 Clé secrète de l’app Instagram
 0c1a405a47cc12dda94f41a996a6d31a
 0c1a405a47cc12dda94f41a996a6d31a
+
+5dd1a55ef3b334a5e6bfb7b9bf35a8e5
 */

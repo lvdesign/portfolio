@@ -1,0 +1,17 @@
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/portfolio/vendor/bundle/gems/racc-1.5.2/ext/racc/cparse
+/opt/homebrew/opt/ruby/bin/ruby -I /opt/homebrew/lib/ruby/site_ruby/3.0.0 extconf.rb
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/portfolio/vendor/bundle/gems/racc-1.5.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20220929-14911-mtd03e sitelibdir\=./.gem.20220929-14911-mtd03e clean
+
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/portfolio/vendor/bundle/gems/racc-1.5.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20220929-14911-mtd03e sitelibdir\=./.gem.20220929-14911-mtd03e
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/portfolio/vendor/bundle/gems/racc-1.5.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20220929-14911-mtd03e sitelibdir\=./.gem.20220929-14911-mtd03e install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20220929-14911-mtd03e/racc
